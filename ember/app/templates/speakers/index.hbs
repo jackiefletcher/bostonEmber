@@ -1,5 +1,5 @@
-{{#each}}
-  {{~#link-to 'speakers.show' this}}
-    {{name}} ({{presentations.length}})
+{{#each speaker in this}}
+  {{~#link-to 'speakers.show' speaker}}
+    {{speaker.name}} ({{speaker.presentations.length}})
   {{~/link-to}}
 {{/each}}
